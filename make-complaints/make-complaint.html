@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #complaint-form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #user-info-form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+      
+
+     
+
+
+        
+    </style>
+</head>
+<body>
+
+<div id="complaint-form">
+    <h2>File a Complaint</h2>
+    <form id="complaint-form">
+        <label for="report-id">Report ID:</label>
+        <input type="text" id="report-id" name="report-id" required>
+
+        <label for="report-address">Report Address:</label>
+        <input type="text" id="report-address" name="report-address" required>
+
+        <label for="report-city">Report City:</label>
+        <input type="text" id="report-city" name="report-city" required>
+
+        <label for="report-zip">Report Zip:</label>
+        <input type="text" id="report-zip" name="report-zip" required>
+
+        <label for="institution">Institution:</label>
+        <select id="institution" name="institution" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+      </select>
+
+        <label for="violation-active">Violation Active:</label>
+        <select id="violation-active" name="violation-active" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="incident-date">Incident Date:</label>
+        <input type="date" id="incident-date" name="incident-date" required>
+
+        <label for="emergency">Emergency:</label>
+        <select id="emergency" name="emergency" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="intention">Intention:</label>
+        <select id="intention" name="intention" required>
+          <option value="Accident">Accident</option>
+          <option value="Purposeful">Purposeful</option>
+          <option value="Unknown">Unknown</option>
+      </select>
+
+        <label for="violation-method">Violation Method:</label>
+        <input type="text" id="violation-method" name="violation-method" required>
+
+        <label for="affected-subjects">Affected Subjects:</label>
+        <input type="text" id="affected-subjects" name="affected-subjects" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="media-upload">Media Upload (Image or Video):</label>
+        <input type="file" id="media-upload" name="media-upload" accept="image/*,video/*">
+
+        <button type="submit">Submit Complaint</button>
+
+        <div id="user-info-form">
+            <h2>User Information</h2>
+            <form id="user-info-form">
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" name="user-id" required>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+        
+                <button type="submit">Save Information</button>
+            </form>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Add any JavaScript code here if needed
+</script>
+
+</body>
+</html>
