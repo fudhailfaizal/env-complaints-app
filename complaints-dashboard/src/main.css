@@ -3803,7 +3803,7 @@ textarea.form-control-lg {
 }
 .nav-link:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(114, 253, 0, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(111, 247, 0, 0.25);
 }
 .nav-link.disabled, .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3855,6 +3855,10 @@ textarea.form-control-lg {
 .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
+}
+
+.custom-navbar {
+  background-color: #406A31;
 }
 
 .nav-underline {
